@@ -1,0 +1,88 @@
+	body {
+	background-color: rgba(197,179,88,1.00);
+	font-family: 'Quantico' , sans-serif;
+	font-size: xx-large;
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+; 	width: 0%;
+/* Styles */
+}
+
+
+
+	
+
+
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+	padding-left: 0px;
+	padding-left: 0px;
+	font-style: normal;
+		
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 100px
+}
+.fa-instagram {
+  background: #3B5998;
+  color: white;
+  width: 100px
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+body img {
+	width: 80%;
+	height: 80%;
+
+
+}
+
+
+
+	 	
+
+; 	float: none;
+
+@media (min-width:768px){
+
+}
+#banner {
+}
+#fspa {
+}
+#youtube {
+}
+#cast {
+}

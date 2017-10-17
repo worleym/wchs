@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8" shrink-to-fit="yes" >
+<title>CHS Student News</title>
+<link href="Mainstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+<link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
+<h1>Welcome to Citrus Highschool's WCHS News! </h1>
+<div id="banner"><img src="Pictures/Main_Desk.jpg" width="80%" alt=""/></div>
+<div id="cast"><a href="Index2.html">View Cast </a></div>
+<img src="Pictures/Justine.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Allison.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Amanda.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Ben.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Haven.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Braden.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Lilli.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Jessica.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Shyanne.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Abigail.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Ethan.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Tim.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Miles.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Joshua.JPG" width="210" height="282" alt=""/>
+<img src="Pictures/Michael.JPG" width="210" height="282" alt=""/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div id="youtube"><iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+
+<script>
+var channelID = "UCQ8Lzvb0mSz0p5XAmZoW1zw";
+$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+   var link = data.items[0].link;
+   var id = link.substr(link.indexOf("=")+1);
+    $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+}) ; 
+</script> <a class="twitter-timeline" data-width="600" data-height="340" href="https://twitter.com/wchsnewsch4?ref_src=twsrc%5Etfw">Tweets by wchsnewsch4</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div>
+<a href="https://www.facebook.com/CHSwchsnews/" class="fa fa-facebook"></a>
+<a href="https://instagram.com/wchsnews2017" class="fa fa-instagram"></a>
+<a href="https://twitter.com/wchsnewsch4" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/channel/UCQ8Lzvb0mSz0p5XAmZoW1zw" class="fa fa-youtube"></a>
+</div>
+<div id="fspa"><img src="Pictures/fspa.jpg" width="50%" alt=""/><img src="Pictures/SpectrumSports.jpg" width="46%" alt=""/></div>
+</body>
+</html>
